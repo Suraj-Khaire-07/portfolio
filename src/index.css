@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base & Fonts ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#0f0f1a] text-slate-200 font-sans antialiased;
+  }
+  body.light {
+    @apply bg-slate-50 text-slate-800;
+  }
+  * {
+    @apply border-dark-border;
+  }
+}
+
+/* ===== Custom Utilities ===== */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent;
+  }
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .glass-light {
+    @apply bg-white/80 backdrop-blur-md border border-slate-200;
+  }
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+/* ===== Cursor blink ===== */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* ===== Grid background ===== */
+.hero-grid-bg {
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ===== Progress bar animation ===== */
+.progress-fill {
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== Timeline connector ===== */
+.timeline-item:not(:last-child) > .timeline-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #6366f1, transparent);
+}
