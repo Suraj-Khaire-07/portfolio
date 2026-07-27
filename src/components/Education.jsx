@@ -6,7 +6,7 @@ const TIMELINE = [
         title: 'B.Tech in Computer Engineering',
         sub: 'Vishwakarma Institute of Information Technology, Pune',
         desc: 'Currently in Second Year. Relevant coursework: Data Structures & Algorithms, OOPs, Computer Networks, OS, Data Science, Machine Learning, Explainable AI, Data-Centric AI.',
-        tags: ['CGPA: 8.12', 'Second Year'],
+        tags: ['CGPA: 8.51', 'Final Year'],
     },
 ]
 

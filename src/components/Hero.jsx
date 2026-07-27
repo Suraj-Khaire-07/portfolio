@@ -104,8 +104,8 @@ export default function Hero({ darkMode }) {
                             <button
                                 onClick={() => scrollTo('contact')}
                                 className={`flex items-center gap-2 px-6 py-3 font-semibold rounded-xl border transition-all duration-200 hover:-translate-y-0.5 ${darkMode
-                                        ? 'border-indigo-500/40 text-indigo-400 hover:bg-indigo-500/10 hover:border-indigo-400'
-                                        : 'border-indigo-300 text-indigo-600 hover:bg-indigo-50'
+                                    ? 'border-indigo-500/40 text-indigo-400 hover:bg-indigo-500/10 hover:border-indigo-400'
+                                    : 'border-indigo-300 text-indigo-600 hover:bg-indigo-50'
                                     }`}
                             >
                                 <i className="fas fa-envelope text-sm"></i> Contact Me
@@ -117,7 +117,7 @@ export default function Hero({ darkMode }) {
                             {[
                                 { href: 'https://github.com/Suraj-Khaire-01', icon: 'fab fa-github', label: 'GitHub' },
                                 { href: 'https://www.linkedin.com/in/suraj-khaire-995100346/', icon: 'fab fa-linkedin', label: 'LinkedIn' },
-                                { href: 'mailto:surajkhaire0077@gmail.com', icon: 'fas fa-envelope', label: 'Email' },
+                                { href: 'mailto:suraj.khaire01@outlook.com', icon: 'fas fa-envelope', label: 'Email' },
                             ].map(s => (
                                 <a
                                     key={s.label}

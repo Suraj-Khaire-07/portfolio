@@ -7,52 +7,35 @@ const SKILL_CARDS = [
         color: 'from-blue-500 to-cyan-500',
         tags: [
             { icon: 'fab fa-java', label: 'Java' },
-            { icon: 'fab fa-js', label: 'JavaScript' },
             { icon: 'fab fa-python', label: 'Python' },
-            { icon: 'fas fa-database', label: 'SQL' },
+            { icon: 'fab fa-js', label: 'JavaScript' },
+            { icon: 'fas fa-server', label: 'JCL' },
+            { icon: 'fab fa-html5', label: 'HTML/CSS' },
             { icon: 'fas fa-terminal', label: 'Bash' },
         ],
     },
     {
         icon: 'fas fa-palette',
-        title: 'Frontend',
+        title: 'Frameworks & Libraries',
         color: 'from-indigo-500 to-violet-500',
         tags: [
-            { icon: 'fab fa-html5', label: 'HTML' },
-            { icon: 'fab fa-css3-alt', label: 'CSS' },
+            { icon: 'fab fa-angular', label: 'Angular' },
             { icon: 'fab fa-react', label: 'React.js' },
+            { icon: 'fas fa-bolt', label: 'FastAPI' },
+            { icon: 'fab fa-node-js', label: 'Node.js' },
+            { icon: 'fas fa-server', label: 'Express.js' },
+            { icon: 'fab fa-python', label: 'Flask' },
             { icon: 'fas fa-wind', label: 'Tailwind CSS' },
         ],
     },
     {
-        icon: 'fas fa-server',
-        title: 'Backend',
-        color: 'from-emerald-500 to-teal-500',
-        tags: [
-            { icon: 'fab fa-node-js', label: 'Node.js' },
-            { icon: 'fas fa-bolt', label: 'Express.js' },
-            { icon: 'fab fa-python', label: 'Flask' },
-        ],
-    },
-    {
         icon: 'fas fa-database',
-        title: 'Database',
+        title: 'Databases',
         color: 'from-orange-500 to-amber-500',
         tags: [
             { icon: 'fas fa-leaf', label: 'MongoDB' },
             { icon: 'fas fa-database', label: 'SQL' },
-            { icon: 'fas fa-database', label: 'PostgreSQL' },
             { icon: 'fas fa-database', label: 'DB2' },
-        ],
-    },
-    {
-        icon: 'fas fa-brain',
-        title: 'AI / Data Science',
-        color: 'from-pink-500 to-rose-500',
-        tags: [
-            { icon: 'fas fa-robot', label: 'Scikit-Learn' },
-            { icon: 'fas fa-chart-line', label: 'Machine Learning' },
-            { icon: 'fas fa-microscope', label: 'Data Science' },
         ],
     },
     {
@@ -62,20 +45,25 @@ const SKILL_CARDS = [
         tags: [
             { icon: 'fab fa-git-alt', label: 'Git' },
             { icon: 'fab fa-github', label: 'GitHub' },
-            { icon: 'fas fa-infinity', label: 'GitHub Actions' },
-            { icon: 'fas fa-fire', label: 'Firebase' },
+            { icon: 'fas fa-plug', label: 'REST APIs' },
             { icon: 'fab fa-microsoft', label: 'Azure' },
+            { icon: 'fab fa-aws', label: 'AWS' },
+            { icon: 'fas fa-fire', label: 'Firebase' },
+            { icon: 'fas fa-infinity', label: 'GitHub Actions' },
+            { icon: 'fas fa-network-wired', label: 'Topaz API' },
+            { icon: 'fas fa-diagram-project', label: 'MCP' },
+            { icon: 'fas fa-desktop', label: 'ISPF' },
         ],
     },
 ]
 
 const PROGRESS_ITEMS = [
-    { label: 'JavaScript / React.js', pct: 88, color: 'bg-yellow-400' },
+    { label: 'JavaScript / React.js', pct: 90, color: 'bg-yellow-400' },
+    { label: 'Angular / FastAPI', pct: 80, color: 'bg-red-400' },
     { label: 'Node.js / Express.js', pct: 82, color: 'bg-emerald-400' },
-    { label: 'Python / Flask', pct: 78, color: 'bg-blue-400' },
-    { label: 'AI / Machine Learning', pct: 72, color: 'bg-pink-400' },
+    { label: 'Python / Flask', pct: 80, color: 'bg-blue-400' },
     { label: 'Java', pct: 75, color: 'bg-orange-400' },
-    { label: 'Cloud (Azure / Firebase)', pct: 65, color: 'bg-violet-400' },
+    { label: 'Cloud (Azure / AWS / Firebase)', pct: 68, color: 'bg-violet-400' },
 ]
 
 export default function Skills({ darkMode }) {
@@ -99,7 +87,6 @@ export default function Skills({ darkMode }) {
     return (
         <section id="skills" className={`py-24 ${darkMode ? 'bg-[#111124]' : 'bg-white'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
                 <div className="text-center mb-16">
                     <p className="text-indigo-400 font-mono text-sm font-medium mb-2">What I Know</p>
                     <h2 className={`text-4xl sm:text-5xl font-extrabold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
@@ -108,8 +95,7 @@ export default function Skills({ darkMode }) {
                     <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto rounded-full"></div>
                 </div>
 
-                {/* Skill Cards */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {SKILL_CARDS.map(card => (
                         <div
                             key={card.title}
@@ -140,17 +126,15 @@ export default function Skills({ darkMode }) {
                     ))}
                 </div>
 
-                {/* Concepts row */}
                 <div className={`p-6 rounded-2xl border mb-8 ${darkMode ? 'bg-[#1a1a2e] border-white/10' : 'bg-slate-50 border-slate-200'}`}>
                     <h3 className={`text-sm font-bold mb-4 uppercase tracking-widest ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Concepts</h3>
                     <div className="flex flex-wrap gap-3">
-                        {['RESTful APIs', 'CI/CD', 'Authentication', 'Cloud Deployment', 'Mainframe Technology'].map(c => (
+                        {['RESTful APIs', 'CI/CD', 'Authentication', 'Cloud Deployment', 'Compiler Design', 'Mainframe Technology'].map(c => (
                             <span key={c} className={`px-4 py-2 rounded-xl text-sm font-medium ${darkMode ? 'bg-indigo-500/10 text-indigo-300 border border-indigo-500/20' : 'bg-indigo-50 text-indigo-700 border border-indigo-200'}`}>{c}</span>
                         ))}
                     </div>
                 </div>
 
-                {/* Progress Bars */}
                 <div
                     ref={progressRef}
                     className={`p-8 rounded-2xl border ${darkMode ? 'bg-[#1a1a2e] border-white/10' : 'bg-slate-50 border-slate-200'}`}

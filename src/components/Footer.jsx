@@ -31,7 +31,7 @@ export default function Footer({ darkMode }) {
                         {[
                             { href: 'https://github.com/Suraj-Khaire-01', icon: 'fab fa-github', label: 'GitHub' },
                             { href: 'https://www.linkedin.com/in/suraj-khaire-995100346/', icon: 'fab fa-linkedin', label: 'LinkedIn' },
-                            { href: 'mailto:surajkhaire0077@gmail.com', icon: 'fas fa-envelope', label: 'Email' },
+                            { href: 'mailto:suraj.khaire01@outlook.com', icon: 'fas fa-envelope', label: 'Email' },
                         ].map(s => (
                             <a
                                 key={s.label}
@@ -40,8 +40,8 @@ export default function Footer({ darkMode }) {
                                 rel="noreferrer"
                                 aria-label={s.label}
                                 className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all hover:-translate-y-1 ${darkMode
-                                        ? 'bg-white/5 text-slate-400 hover:bg-indigo-500/20 hover:text-indigo-400 border border-white/10'
-                                        : 'bg-slate-100 text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200'
+                                    ? 'bg-white/5 text-slate-400 hover:bg-indigo-500/20 hover:text-indigo-400 border border-white/10'
+                                    : 'bg-slate-100 text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200'
                                     }`}
                             >
                                 <i className={`${s.icon} text-sm`}></i>

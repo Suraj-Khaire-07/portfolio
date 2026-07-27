@@ -7,6 +7,8 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Experience from './components/Experience'
+import Certifications from './components/Certifications'
 
 export default function App() {
     const [darkMode, setDarkMode] = useState(true)
@@ -35,6 +37,8 @@ export default function App() {
             <Skills darkMode={darkMode} />
             <Projects darkMode={darkMode} />
             <Education darkMode={darkMode} />
+            <Experience darkMode={darkMode} />
+            <Certifications darkMode={darkMode} />
             <Contact darkMode={darkMode} />
             <Footer darkMode={darkMode} />
         </div>

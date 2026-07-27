@@ -1,15 +1,27 @@
 const PROJECTS = [
     {
-        icon: 'fas fa-robot',
+        icon: 'fas fa-code',
         iconBg: 'from-indigo-500 to-violet-600',
-        title: 'AI-Augmented SaaS Platform for Marketplace Vendors',
-        desc: 'Full-stack SaaS platform assisting online sellers with AI-powered sales forecasting, smart pricing, and inventory management. Features a responsive analytics dashboard with Stripe subscription billing.',
-        tech: ['React.js', 'Node.js', 'Flask', 'Python', 'Scikit-Learn', 'MongoDB', 'PostgreSQL', 'Stripe API'],
-        github: 'https://github.com/Suraj-Khaire-01',
+        title: 'MiniLang IDE',
+        desc: 'Full-stack IDE for a custom programming language, enabling users to write, parse, visualize, and execute code. Custom grammar with lexical analysis, parsing, AST generation, and an interpreter built with the Visitor Pattern. Interactive visualizations for tokens, AST, output, and memory state.',
+        tech: ['React.js', 'Python', 'ANTLR4', 'AST', 'Visitor Pattern', 'Git'],
+        github: 'https://github.com/Suraj-Khaire-01/miniLang',
         demo: null,
         status: 'Ongoing',
         statusColor: 'text-blue-400 bg-blue-400/10',
         featured: true,
+    },
+    {
+        icon: 'fas fa-file-shield',
+        iconBg: 'from-emerald-500 to-teal-500',
+        title: 'IPR Management System',
+        desc: 'Full-stack web application to streamline the filing, tracking, and management of patents, trademarks, and copyrights. Secure authentication, role-based access control, REST APIs, and centralized record management for Admins and Applicants.',
+        tech: ['React.js', 'Vite', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Vercel', 'Render', 'Git'],
+        github: 'https://github.com/Suraj-Khaire-01/ipr-project',
+        demo: null, // add your live demo URL here
+        status: 'Completed',
+        statusColor: 'text-emerald-400 bg-emerald-400/10',
+        featured: false,
     },
     {
         icon: 'fas fa-users',
@@ -17,19 +29,7 @@ const PROJECTS = [
         title: 'AlumNetwork – Alumni Platform',
         desc: 'SaaS landing page and backend system for an alumni network platform with a responsive React UI, authentication APIs, RESTful architecture, and CI/CD deployment on Vercel and Render.',
         tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'Vite', 'Git'],
-        github: 'https://github.com/Suraj-Khaire-01',
-        demo: null,
-        status: 'Completed',
-        statusColor: 'text-emerald-400 bg-emerald-400/10',
-        featured: false,
-    },
-    {
-        icon: 'fas fa-link',
-        iconBg: 'from-orange-500 to-amber-500',
-        title: 'URL Shortener Web Application',
-        desc: 'Web application to generate and manage shortened URLs with RESTful APIs for URL generation and redirection, scalable backend architecture, and structured error handling.',
-        tech: ['Node.js', 'Express.js', 'MongoDB'],
-        github: 'https://github.com/Suraj-Khaire-01',
+        github: 'https://github.com/Suraj-Khaire-01/AlumNetwork-saas',
         demo: null,
         status: 'Completed',
         statusColor: 'text-emerald-400 bg-emerald-400/10',
@@ -55,8 +55,8 @@ export default function Projects({ darkMode }) {
                         <div
                             key={p.title}
                             className={`group relative flex flex-col rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ${darkMode
-                                    ? `bg-[#1a1a2e] border-white/10 hover:shadow-indigo-500/10 ${p.featured ? 'border-indigo-500/30' : ''}`
-                                    : `bg-white border-slate-200 hover:shadow-indigo-200 ${p.featured ? 'border-indigo-300' : ''}`
+                                ? `bg-[#1a1a2e] border-white/10 hover:shadow-indigo-500/10 ${p.featured ? 'border-indigo-500/30' : ''}`
+                                : `bg-white border-slate-200 hover:shadow-indigo-200 ${p.featured ? 'border-indigo-300' : ''}`
                                 }`}
                         >
                             {p.featured && (
@@ -111,8 +111,8 @@ export default function Projects({ darkMode }) {
                         target="_blank"
                         rel="noreferrer"
                         className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold border transition-all hover:-translate-y-0.5 ${darkMode
-                                ? 'border-white/10 text-slate-300 hover:border-indigo-500/40 hover:text-indigo-400 hover:bg-indigo-500/5'
-                                : 'border-slate-200 text-slate-700 hover:border-indigo-300 hover:text-indigo-600'
+                            ? 'border-white/10 text-slate-300 hover:border-indigo-500/40 hover:text-indigo-400 hover:bg-indigo-500/5'
+                            : 'border-slate-200 text-slate-700 hover:border-indigo-300 hover:text-indigo-600'
                             }`}
                     >
                         <i className="fab fa-github"></i> View More on GitHub
