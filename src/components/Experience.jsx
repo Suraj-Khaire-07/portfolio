@@ -1,15 +1,15 @@
 const EXPERIENCE = [
     {
-        role: 'Software Engineering Intern',
+        role: 'Product Developer Intern',
         company: 'BMC Software',
         location: 'Hybrid • Pune, India',
         date: 'Jan 2026 – June 2026',
         project: 'AI-powered JCL Modernization Platform',
         points: [
-            'Developed 15+ frontend and backend features using Angular and FastAPI for an AI-powered JCL modernization platform.',
-            'Integrated Large Language Models (LLMs) with manual user prompting, leveraging the compiler frontend to process ASTs for JCL explanation, syntax correction, and modernization.',
-            'Designed and implemented a multi-tab JCL editor with persistent session storage, allowing users to seamlessly resume work across sessions.',
-            'Integrated the Topaz API to securely communicate with IBM Mainframe systems for automated JCL retrieval and processing.',
+            // 'Developed 15+ frontend and backend features using Angular and FastAPI for an AI-powered JCL modernization platform.',
+            // 'Integrated Large Language Models (LLMs) with manual user prompting, leveraging the compiler frontend to process ASTs for JCL explanation, syntax correction, and modernization.',
+            // 'Designed and implemented a multi-tab JCL editor with persistent session storage, allowing users to seamlessly resume work across sessions.',
+            // 'Integrated the Topaz API to securely communicate with IBM Mainframe systems for automated JCL retrieval and processing.',
         ],
         tech: ['Angular', 'FastAPI', 'Python', 'JCL', 'AST', 'Compiler Frontend', 'LLM', 'Topaz API'],
     },

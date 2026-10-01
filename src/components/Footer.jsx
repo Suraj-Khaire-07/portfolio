@@ -32,6 +32,7 @@ export default function Footer({ darkMode }) {
                             { href: 'https://github.com/Suraj-Khaire-01', icon: 'fab fa-github', label: 'GitHub' },
                             { href: 'https://www.linkedin.com/in/suraj-khaire-995100346/', icon: 'fab fa-linkedin', label: 'LinkedIn' },
                             { href: 'mailto:suraj.khaire01@outlook.com', icon: 'fas fa-envelope', label: 'Email' },
+                            { href: 'https://www.instagram.com/_suraj_khaire_7927/', icon: 'fab fa-instagram', label: 'Instagram' },
                         ].map(s => (
                             <a
                                 key={s.label}

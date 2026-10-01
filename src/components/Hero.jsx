@@ -72,7 +72,7 @@ export default function Hero({ darkMode }) {
                     <div className={`transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                         <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6 ${darkMode ? 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/20' : 'bg-indigo-50 text-indigo-600 border border-indigo-200'}`}>
                             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                            Available for Internships &amp; Collaborations
+                            Doing Internship at BMC Software
                         </div>
 
                         <p className={`text-sm font-medium mb-3 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>
@@ -155,7 +155,7 @@ export default function Hero({ darkMode }) {
     `}<span className="text-emerald-400">"AI / ML"</span>{`,
     `}<span className="text-emerald-400">"Cloud"</span>{`,
   ],
-  `}<span className="text-violet-400">cgpa</span>{`: `}<span className="text-orange-400">8.12</span>{`,
+  `}<span className="text-violet-400">cgpa</span>{`: `}<span className="text-orange-400">8.51</span>{`,
   `}<span className="text-violet-400">available</span>{`: `}<span className="text-orange-400">true</span>{`,
 };`}
                                 </pre>
